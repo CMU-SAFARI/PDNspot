@@ -1,0 +1,147 @@
+- !PDN
+  Name: MBVR
+  # Define each sub-PDN below under SubPDN1, SubPDN2, ...
+  SubPDN1:
+    Name: Compute IVR
+    # Off chip Efficiency of the sub PDN's voltage regulator (%).
+    OffChipEffi: SVR 
+    # Off chip loadline of the sub PDN (in milliohm).
+    OffChipRLL: 2 
+    # Application Ratio of the subPDN (all domains in the subPDN)
+    AR: 55
+    domains:
+    - !Domain
+      Name: Core0
+      # Nominal Voltage required by the domain (V).
+      Vnom: 0.82
+      # Tolerance Band Voltage of the domain (mV).
+      Vtob: 18
+      # Power consumption of the domain (W)
+      Pnom: 15
+      # Application Ratio (%)
+      AR: 54
+      # Embedded power-gate loadline (in milliohm).
+      EPG: 2
+      # Leakage fraction (%)
+      FL: 22
+      #Leakage Scaling Factor 
+      delta: 2.8
+      # On chip Efficiency of the domains voltage regulator (%).
+      OnChipEffi: None 
+    - !Domain
+      Name: Core1
+      # Nominal Voltage required by the domain (V).
+      Vnom: 0.82
+      # Tolerance Band Voltage of the domain (mV).
+      Vtob: 18
+      # Power consumption of the domain (W)
+      Pnom: 15
+      # Application Ratio (%)
+      AR: 54
+      # Embedded power-gate loadline (in milliohm).
+      EPG: 2
+      # Leakage fraction (%)
+      FL: 22
+      #Leakage Scaling Factor 
+      delta: 2.8
+      # On chip Efficiency of the domains voltage regulator (%).
+      OnChipEffi: None 
+    - !Domain
+      Name: LLC
+      # Nominal Voltage required by the domain (V).
+      Vnom: 0.82
+      # Tolerance Band Voltage of the domain (mV).
+      Vtob: 18
+      # Power consumption of the domain (W)
+      Pnom: 4
+      # Application Ratio (%)
+      AR: 56
+      # Embedded power-gate loadline (in milliohm).
+      EPG: 1
+      # Leakage fraction (%)
+      FL: 22
+      #Leakage Scaling Factor 
+      delta: 2.8
+      # On chip Efficiency of the domains voltage regulator (%).
+      OnChipEffi: None 
+  SubPDN2:
+    Name: Graphics
+    # Off chip Efficiency of the sub PDN's voltage regulator (%).
+    OffChipEffi: SVR 
+    # Off chip loadline of the sub PDN (in milliohm).
+    OffChipRLL: 2 
+    # Application Ratio of the subPDN (all domains in the subPDN)
+    AR: 60
+    domains:
+    - !Domain
+      Name: GFX
+      # Nominal Voltage required by the domain (V).
+      Vnom: 0.82
+      # Tolerance Band Voltage of the domain (mV).
+      Vtob: 18
+      # Power consumption of the domain (W)
+      Pnom: 0
+      # Application Ratio (%)
+      AR: 56
+      # Embedded power-gate loadline (in milliohm).
+      EPG: 0
+      # Leakage fraction (%)
+      FL: 22
+      #Leakage Scaling Factor 
+      delta: 2.8
+      # On chip Efficiency of the domains voltage regulator (%).
+      OnChipEffi: None
+  SubPDN3:
+    Name: System Agent
+    # Off chip Efficiency of the sub PDN's voltage regulator (%).
+    OffChipEffi: SVR 
+    # Off chip loadline of the sub PDN (in milliohm).
+    OffChipRLL: 2 
+    # Application Ratio of the subPDN (all domains in the subPDN)
+    AR: 50
+    domains:
+    - !Domain
+      Name: SA
+      # Nominal Voltage required by the domain (V).
+      Vnom: 0.65
+      # Tolerance Band Voltage of the domain (mV).
+      Vtob: 18
+      # Power consumption of the domain (W)
+      Pnom: 0.85
+      # Application Ratio (%)
+      AR: 57
+      # Embedded power-gate loadline (in milliohm).
+      EPG: 1
+      # Leakage fraction (%)
+      FL: 22
+      #Leakage Scaling Factor 
+      delta: 2.8
+      # On chip Efficiency of the domains voltage regulator (%).
+      OnChipEffi: None
+  SubPDN4:
+    Name: Input/Output
+    # Off chip Efficiency of the sub PDN's voltage regulator (%).
+    OffChipEffi: SRV 
+    # Off chip loadline of the sub PDN (in milliohm).
+    OffChipRLL: 2 
+    # Application Ratio of the subPDN (all domains in the subPDN)
+    AR: 59
+    domains:
+    - !Domain
+      Name: IO
+      # Nominal Voltage required by the domain (V).
+      Vnom: 0.95
+      # Tolerance Band Voltage of the domain (mV).
+      Vtob: 18
+      # Power consumption of the domain (W)
+      Pnom: 1.25
+      # Application Ratio (%)
+      AR: 40
+      # Embedded power-gate loadline (in milliohm).
+      EPG: 1
+      # Leakage fraction (%)
+      FL: 22
+      #Leakage Scaling Factor 
+      delta: 2.8
+      # On chip Efficiency of the domains voltage regulator (%).
+      OnChipEffi: None 
