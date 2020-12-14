@@ -47,6 +47,16 @@ Proceedings of the 53rd International Symposium on Microarchitecture (MICRO), Vi
 ## Contributors
 * **Jawad Haj-Yahya** (ETH Zurich) 
 
+##Talks
+The presentations of the paper are available on YouTube:
+* [**MICRO 2020 Full Talk Video (15 minutes)**](https://www.youtube.com/watch?v=P97EsW7dzQ4)
+  * [**slides**](https://people.inf.ethz.ch/omutlu/pub/FlexWatts-HybridPowerDeliveryNetwork_micro20-talk.pdf)
+* [**MICRO 2020Short Talk Video and Q&A (15 minutes)**](https://www.youtube.com/watch?v=wd7U2jrjHBM)
+  * [**slides**](https://people.inf.ethz.ch/omutlu/pub/FlexWatts-HybridPowerDeliveryNetwork_micro20-short-talk.pdf)
+
+## Contact
+Jawad Haj-Yahya (jhajyahya@ethz.ch)
+
 
 
 
