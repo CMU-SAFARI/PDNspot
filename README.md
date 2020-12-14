@@ -12,7 +12,7 @@ Architecting an efficient PDN for client processors (e.g., tablets, laptops, des
 
 We model these three PDNs using PDNspot. Variants of these PDNs can be modeled using PDNspot.
 
-## Using PDNspot
+## Running PDNspot
 PDNspot tool is written in Python (PDNspot.py). To configure your PDN, update the configuration file (pdns.yaml). You can update existing PDNs and their parameters to realize your target PDN.
 
 ```bash
